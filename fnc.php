@@ -1,6 +1,6 @@
 <?php
 
-class user_details{
+class fnc{
 
     var $fname;
     public $username;
