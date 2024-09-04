@@ -1,7 +1,6 @@
 <?php
-require_once "fnc.php";
+require_once "user_details";
 
-$obj = new fnc();
-
+$obj = new  user_details();
 
 ?>
