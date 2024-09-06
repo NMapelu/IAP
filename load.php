@@ -6,7 +6,6 @@ function classAutoLoad($classname){
 
 $directories = ["contents", "layouts", "menus"];
 
-
 foreach($directories AS $dir){
     $filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . $dir .
     DIRECTORY_SEPARATOR . $classname . ".php";
@@ -14,7 +13,7 @@ foreach($directories AS $dir){
         require_once $filename;
     }
 
- }
+   }
 
 }
 spl_autoload_register('classAutoLoad');
