@@ -2,9 +2,11 @@
     <?php 
     require_once "load.php";
 
-    $ObjLayout->heading();
+    $ObjLayouts->heading();
     $ObjMenus->main_menu();
     $ObjHeadings->main_banner();
+    $ObjCont->main_content();
+    $ObjCont->side_bar();
     $ObjLayouts->footer();
 
     ?>

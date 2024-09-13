@@ -9,6 +9,7 @@ $directories = ["contents", "layouts", "menus"];
 foreach($directories AS $dir){
     $filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . $dir .
     DIRECTORY_SEPARATOR . $classname . ".php";
+    
     if(file_exists($filename) AND is_readable($filename)){
         require_once $filename;
     }
@@ -18,9 +19,11 @@ foreach($directories AS $dir){
 }
 spl_autoload_register('classAutoLoad');
 
-$ObjLayout = new Layout(); 
+$ObjLayouts = new layouts(); 
 $ObjMenus = new Menus();
 $ObjHeadings = new headings();
+$ObjCont = new contents();
+
 
 
 /*$arr = ["black", "white", "green", "red"];
